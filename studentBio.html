@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>My Student Bio</title>
+
+    <!-- Load an icon library  -->
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Adding Style to my bio page -->
+    <link 
+        href='https://fonts.googleapis.com/css?family=Audiowide' 
+        rel='stylesheet'>
+    <link 
+        href='https://fonts.googleapis.com/css?family=Mina' 
+        rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Audiowide';
+        }
+        h1 {
+            font-size: 80px;
+            text-align: center;
+        }
+        p {
+            font-family: 'Mina';
+            font-size: 22px;
+        }
+
+        * {box-sizing: border-box;}
+
+        .container {
+            position: relative;
+            width: 25%;
+            max-width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .image {
+            display: block;
+            width: 200;
+            height: 200;
+        }
+
+        .overlay {
+            position: absolute; 
+            bottom: 0; 
+            background: rgb(0, 0, 0);
+            background: rgba(0, 0, 0, 0.5); /* Black see-through */
+            color: #f1f1f1; 
+            width: 100%;
+            transition: .5s ease;
+            opacity:0;
+            color: white;
+            font-size: 15px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .container:hover .overlay {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- Title of my website -->
+    <h1>Student Bio</h1>
+
+    <!-- Presenting my photo -->
+    <div class="container">
+        <img
+            src="https://lh3.googleusercontent.com/a-/AAuE7mDdgpnJ-G1Z_CnwYOrAn2HY8AmhYp9lzkLt16-P=s192-cc-rg"
+            alt="My Photo"
+            class="image"
+            height="200"
+            width="200"
+        />
+
+        <div class="overlay">Rodrigo Gimenes</div>
+    </div>
+
+    <!-- My name -->
+    <!--
+    <h3>Rodrigo Gimenes</h3>
+    -->
+
+    <!-- Adding paragraphs  -->
+    <br />
+    <p>
+        Hello there!! 
+    </p>
+
+    <p>   
+        My name is <b>Rodrigo Gimenes</b> and I am a student in <i>University of Toronto</i>.
+    </p>    
+    
+    <p>
+        I am from <b>Brazil</b>, specifically from the city of <b>Sao Paulo</b>.
+        Currently I am living in <i>Toronto, Canada ON</i>.
+    </p>
+
+    <!-- Adding My contact info-->
+    <br />
+    <div class="panel panel-primary">
+    <div class="panel-heading">
+        <i class="fa fa-fw fa-user"></i> 
+        <strong>
+              Contact Info
+        </strong>
+    </div>
+
+    <div class="panel-body">
+    <ul>
+        <li>
+            Email:
+            <a 
+                href=""
+                target="_blank">
+                <i class="fa fa-fw fa-envelope"></i> 
+                rodrigomacedogimenes@gmail.com
+            </a> 
+        </li>
+        <li>GitHub: 
+            <a
+                href="https://github.com/rodrigomgimenes"
+                target="_blank">
+                github.com/rodrigomgimenes
+            </a>
+        </li>
+        <li>Portfolio:
+            <a
+                href=""
+                target="_blank">
+                Coming Soon...
+            </a>
+        </li>
+    </ul>
+</div>
+</div>
+</body>
+</html>
